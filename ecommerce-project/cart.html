@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEasy – Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="cart">
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">ShopEasy</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cart.html" class="cart-link">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </a>
+    </div>
+  </nav>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main>
+    <h1 class="page-title">Your Cart</h1>
+
+    <!-- Shown when cart is empty -->
+    <div id="empty-message" style="display:none;">
+      <p>Your cart is empty. <a href="index.html">Go back to shopping</a></p>
+    </div>
+
+    <!-- Cart rows are injected here by JavaScript -->
+    <div id="cart-items"></div>
+
+    <!-- Total + checkout button (hidden when cart is empty) -->
+    <div id="cart-summary" style="display:none;">
+      <span id="cart-total">Total: UGX 0</span>
+      <a href="checkout.html" id="checkout-btn">Proceed to Checkout →</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShopEasy — Makerere University Business School</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEasy – Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<!-- data-page tells script.js which page we are on -->
+<body data-page="home">
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">ShopEasy</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cart.html" class="cart-link">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </a>
+    </div>
+  </nav>
+
+  <!-- ── HERO BANNER ── -->
+  <div class="hero">
+    <h1>Welcome to ShopEasy</h1>
+    <p>Browse our products, add to cart, and checkout in seconds.</p>
+  </div>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main>
+
+    <!-- Search bar + category filter buttons -->
+    <div class="controls">
+      <input type="text" id="search-input" placeholder="Search products..." />
+
+      <!-- data-category is read by JavaScript to filter products -->
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="Electronics">Electronics</button>
+      <button class="filter-btn" data-category="Fashion">Fashion</button>
+      <button class="filter-btn" data-category="Books">Books</button>
+    </div>
+
+    <!-- Product cards are injected here by JavaScript -->
+    <div id="product-grid"></div>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>&copy; 2026 ShopEasy — MAIN FANTANSY SHOPPERS</p>
+  </footer>
+
+  <!-- Load JavaScript last so the DOM is ready -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEasy – Checkout</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="checkout">
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">ShopEasy</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cart.html" class="cart-link">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </a>
+    </div>
+  </nav>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main>
+    <h1 class="page-title">Checkout</h1>
+
+    <!-- Success message (hidden by default, shown after order is placed) -->
+    <div id="success-message"></div>
+
+    <!-- Two-column layout: form on left, order summary on right -->
+    <div class="checkout-wrapper">
+
+      <!-- ── CHECKOUT FORM ── -->
+      <div class="form-card">
+        <h2>Delivery Details</h2>
+
+        <!-- Red error box — shown if validation fails -->
+        <div id="form-error"></div>
+
+        <!-- form submission is handled by JavaScript -->
+        <form id="checkout-form">
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="e.g. John Mukasa" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="e.g. 0701234567" />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <textarea id="address" placeholder="Street, area, city..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Place Order</button>
+        </form>
+      </div>
+
+      <!-- ── ORDER SUMMARY ── -->
+      <div id="order-summary">
+        <h2>Order Summary</h2>
+        <!-- Items listed by JavaScript -->
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShopEasy — Makerere University Business School</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
