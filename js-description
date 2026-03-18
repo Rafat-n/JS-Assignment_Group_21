@@ -1,0 +1,37 @@
+Project name: shopeasy
+
+GROUP MEMBERS
+NAMUYOMBA SHEILAH     24/U/09444/PS
+NANYONJO SHALOM RITAH     24/U/1114
+NAMUMBYA RUTH              24/U/09363/PS
+KUSASIRA CATHERINE         24/U/06215/PS
+NEKESA ROSEMARY            24/U/1151
+NYANZI ARAFAT              24/U/1209
+SSEMWOGERERE JOSEPH        24/U/20198/EVE
+TUMWESIGYE NICHOLAS        24/U/11633/PS
+MAYAMBA ABBEY              24/U/16703/EVE
+NASSUNA PATRICIA           24/U/09885/PS
+
+Project description
+it is an ecommerce website with three pages home cart and checkout.index. the home pages displays all the categories of the products and prices. 
+  cart displays all the selected products  and checkout has the payments form conforming the payments.
+
+
+  HOW THE CODE WORKS
+ECOMMERCE WEBSITE - MAIN JAVASCRIPT DESCRIPTION
+All logic: products, cart, search, filter, localStorage
+ PRODUCT DATA
+ Each product is an object inside an array.
+To add a product: copy one object block and
+ paste it with a new id, name, price, category, image.
+Put your image files in the /images/ folder.
+
+CART HELPERS  (used by all pages)
+Cart is saved in localStorage as a JSON string
+so it survives page refreshes.
+
+ HOME PAGE — Product Display, Search, Filter
+
+PAGE ROUTER
+Detect which page we are on and run the
+ correct init function.
