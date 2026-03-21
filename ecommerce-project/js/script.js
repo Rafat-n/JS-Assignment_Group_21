@@ -14,7 +14,7 @@
 const products = [
   { id: 1, name: "Laptop",        price: 850000, category: "Electronics", image: "images/laptop1.jfif" },
   { id: 2, name: "Smartphone",    price: 650000, category: "Electronics", image: "images/phone.jpeg" },
-  { id: 3, name: "Wireless Earbuds", price: 120000, category: "Electronics", image: "images/phone2.jpeg" },
+  { id: 3, name: "Wireless Earbuds", price: 50000, category: "Electronics", image: "images/phone2.jpeg" },
   { id: 4, name: "Running Shoes", price: 95000,  category: "Fashion",     image: "images/shoe.jpeg" },
   { id: 5, name: "Leather Jacket",price: 180000, category: "Fashion",     image: "images/newyork.jpeg" },
   { id: 6, name: "JavaScript Book",price: 45000, category: "Books",       image: "images/book.jpeg" },
@@ -182,6 +182,7 @@ function addToCart(product) {
     const cart = getCart();
 
     // Check if product is already in the cart
+// if yes just add on until limit
     const existing = cart.find(item => item.id === product.id);
 
     if (existing) {
