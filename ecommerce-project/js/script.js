@@ -14,8 +14,8 @@
 const products = [
   { id: 1, name: "Laptop",        price: 850000, category: "Electronics", image: "images/laptop1.jfif" },
   { id: 2, name: "Smartphone",    price: 650000, category: "Electronics", image: "images/phone.jpeg" },
-  { id: 3, name: "Wireless Earbuds", price: 50000, category: "Electronics", image: "images/phone2.jpeg" },
-  { id: 4, name: "Running Shoes", price: 95000,  category: "Fashion",     image: "images/shoe.jpeg" },
+  { id: 3, name: "IPhone", price: 50000, category: "Electronics", image: "images/phone2.jpeg" },
+  { id: 4, name: "Snikers", price: 95000,  category: "Fashion",     image: "images/shoe.jpeg" },
   { id: 5, name: "Leather Jacket",price: 180000, category: "Fashion",     image: "images/newyork.jpeg" },
   { id: 6, name: "JavaScript Book",price: 45000, category: "Books",       image: "images/book.jpeg" },
   { id: 7, name: "Python Book",   price: 40000,  category: "Books",       image: "images/book2.jpeg" },
